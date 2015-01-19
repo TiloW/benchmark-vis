@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>MaxFlow Benchmark</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/bootstrap-treeview.min.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.routefilter/0.2.0/backbone.routefilter.min.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="lib/bootstrap-treeview.min.js"></script>
+
+	<link rel="stylesheet" href="src/style.css" />
+	<script type="text/javascript" src="data.js"></script>
+	<script type="text/javascript" src="src/view.js"></script>
+	<script type="text/javascript" src="src/main.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+
+	<div id="sidebar">
+	</div>
+
+	<div id="content" class="container">
+		<div class="page-header">
+			<h1>MISSING DATA</h1>
+		</div>
+
+		<div role="tabpanel">
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#tab-summary" aria-controls="tab-summary" role="tab" data-toggle="tab">Summary</a></li>
+				<li role="presentation"><a href="#tab-plots" aria-controls="tab-plots" role="tab" data-toggle="tab">Plots</a></li>
+				<li role="presentation"><a href="#tab-details" aria-controls="tab-details" role="tab" data-toggle="tab">Details</a></li>
+			</ul>
+			<div class="tab-content">
+
+				<div role="tabpanel" class="tab-pane active" id="tab-summary">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Algorithm</th>
+								<th>Average Runtime</th>
+								<th>Number of Solved Instances</th>
+							</tr>
+						</thead>
+						<tbody id="summary">
+						</tbody>
+					</table>
+				</div>
+
+				<div role="tabpanel" class="tab-pane" id="tab-plots">
+					<div id="plots"></div>
+				</div>
+
+				<div role="tabpanel" class="tab-pane" id="tab-details">
+					<table class="table table-hover" id="details">
+					</table>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

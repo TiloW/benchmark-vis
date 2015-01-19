@@ -1,0 +1,43 @@
+html, body {
+  min-width: 1000px;
+}
+
+#sidebar {
+	position: absolute;
+	left: 1em;
+  top: 1em;
+}
+
+#sidebar a {
+  padding-right: 2em;
+}
+
+#content {
+  width: 90%;
+}
+
+#plots text {
+  font: 10px sans-serif;  
+}
+
+#plots .axis line, #plots .axis path {
+  shape-rendering: crispEdges;
+  stroke: black;
+  fill: none;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h1 small {
+  text-transform: lowercase;
+}
+
+#details td:not(:first-child) {
+  text-align: right;
+}
+
+.navtabs {
+  clear: none;
+}
